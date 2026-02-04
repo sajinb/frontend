@@ -1,12 +1,6 @@
 [
   {
     "id": "/api/employees",
-    "httpMethod": "GET",
-    "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
-  },
-  {
-    "id": "/api/employees",
     "httpMethod": "POST",
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
@@ -45,7 +39,8 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false
+          "required": false,
+          "notes": "sent as Number if present, otherwise null"
         }
       },
       {
@@ -97,7 +92,8 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false
+          "required": false,
+          "notes": "sent as Number if present, otherwise null"
         }
       },
       {
