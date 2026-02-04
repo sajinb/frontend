@@ -15,7 +15,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 100
+          "maxLength": 500
         }
       },
       {
@@ -45,16 +45,14 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false,
-          "type": "number"
+          "required": false
         }
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
         "attributes": {
-          "required": false,
-          "type": "date"
+          "required": false
         }
       }
     ]
@@ -69,7 +67,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 100
+          "maxLength": 500
         }
       },
       {
@@ -99,24 +97,14 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false,
-          "type": "number"
+          "required": false
         }
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
         "attributes": {
-          "required": false,
-          "type": "date"
-        }
-      },
-      {
-        "name": "id",
-        "uiType": "internal",
-        "attributes": {
-          "usedInPath": true,
-          "presentWhenEditing": true
+          "required": false
         }
       }
     ]
