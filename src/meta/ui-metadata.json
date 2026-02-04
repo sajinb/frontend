@@ -1,12 +1,6 @@
 [
   {
     "id": "/api/employees",
-    "httpMethod": "GET",
-    "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
-  },
-  {
-    "id": "/api/employees",
     "httpMethod": "POST",
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
@@ -106,6 +100,54 @@
         "attributes": {
           "required": false
         }
+      }
+    ]
+  },
+  {
+    "id": "/api/employees",
+    "httpMethod": "GET",
+    "uiComponent": "src/components/EmployeeList.jsx",
+    "fields": [
+      {
+        "name": "id",
+        "uiType": "text",
+        "attributes": {}
+      },
+      {
+        "name": "firstName",
+        "uiType": "text",
+        "attributes": {
+          "maxLength": 500
+        }
+      },
+      {
+        "name": "lastName",
+        "uiType": "text",
+        "attributes": {
+          "maxLength": 150
+        }
+      },
+      {
+        "name": "email",
+        "uiType": "text",
+        "attributes": {}
+      },
+      {
+        "name": "position",
+        "uiType": "text",
+        "attributes": {
+          "maxLength": 200
+        }
+      },
+      {
+        "name": "salary",
+        "uiType": "number",
+        "attributes": {}
+      },
+      {
+        "name": "hiredDate",
+        "uiType": "date",
+        "attributes": {}
       }
     ]
   }
