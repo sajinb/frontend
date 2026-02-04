@@ -5,16 +5,11 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "hidden",
-        "attributes": {}
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 150
+          "maxLength": 100
         }
       },
       {
@@ -27,7 +22,7 @@
       },
       {
         "name": "email",
-        "uiType": "emailField",
+        "uiType": "email",
         "attributes": {
           "required": true
         }
@@ -42,7 +37,7 @@
       },
       {
         "name": "salary",
-        "uiType": "numberField",
+        "uiType": "number",
         "attributes": {
           "required": false
         }
@@ -62,16 +57,11 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "hidden",
-        "attributes": {}
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 150
+          "maxLength": 100
         }
       },
       {
@@ -84,7 +74,7 @@
       },
       {
         "name": "email",
-        "uiType": "emailField",
+        "uiType": "email",
         "attributes": {
           "required": true
         }
@@ -99,7 +89,7 @@
       },
       {
         "name": "salary",
-        "uiType": "numberField",
+        "uiType": "number",
         "attributes": {
           "required": false
         }
@@ -117,6 +107,42 @@
     "id": "/api/employees",
     "httpMethod": "GET",
     "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
+    "fields": [
+      {
+        "name": "id",
+        "uiType": "textDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "firstName",
+        "uiType": "textDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "lastName",
+        "uiType": "textDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "email",
+        "uiType": "emailDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "position",
+        "uiType": "textDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "salary",
+        "uiType": "numberDisplay",
+        "attributes": {}
+      },
+      {
+        "name": "hiredDate",
+        "uiType": "dateDisplay",
+        "attributes": {}
+      }
+    ]
   }
 ]
