@@ -1,0 +1,4 @@
+body { margin: 0; padding: 0; background: #f7f7f7; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+input, select, textarea { padding: 8px; margin: 4px 0; width: 100%; box-sizing: border-box; }
+button { padding: 8px 12px; margin-top: 8px }
