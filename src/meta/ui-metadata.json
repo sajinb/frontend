@@ -14,7 +14,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 100
+          "maxLength": 150
         }
       },
       {
@@ -71,7 +71,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 100
+          "maxLength": 150
         }
       },
       {
