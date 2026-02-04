@@ -1,6 +1,12 @@
 [
   {
     "id": "/api/employees",
+    "httpMethod": "GET",
+    "uiComponent": "src/components/EmployeeList.jsx",
+    "fields": []
+  },
+  {
+    "id": "/api/employees",
     "httpMethod": "POST",
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
@@ -57,15 +63,6 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "implicit", 
-        "attributes": {
-          "source": "form.existing.id",
-          "requiredFor": "update",
-          "inputPresent": false
-        }
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -111,11 +108,5 @@
         }
       }
     ]
-  },
-  {
-    "id": "/api/employees",
-    "httpMethod": "GET",
-    "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
   }
 ]
