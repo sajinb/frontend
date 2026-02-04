@@ -5,6 +5,11 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {}
+      },
+      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -22,10 +27,9 @@
       },
       {
         "name": "email",
-        "uiType": "textField",
+        "uiType": "emailField",
         "attributes": {
-          "required": true,
-          "type": "email"
+          "required": true
         }
       },
       {
@@ -58,6 +62,11 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {}
+      },
+      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -75,10 +84,9 @@
       },
       {
         "name": "email",
-        "uiType": "textField",
+        "uiType": "emailField",
         "attributes": {
-          "required": true,
-          "type": "email"
+          "required": true
         }
       },
       {
