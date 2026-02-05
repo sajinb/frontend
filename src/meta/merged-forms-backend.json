@@ -14,7 +14,7 @@
           "name": "firstName",
           "uiType": "textField",
           "required": true,
-          "uiMaxLength": 150,
+          "uiMaxLength": 500,
           "declaredJavaAnnotations": ["@Column(length = 100)", "@Size(max = 100)"],
           "javaType": "String",
           "backend": {
@@ -24,8 +24,8 @@
             "length": 100
           },
           "mismatch": {
-            "issue": "UI maxLength (150) is greater than backend column length (100)",
-            "recommendation": "Increase @Column(length = 150) and @Size(max = 150) on the Java entity and update DB schema (migration), or reduce UI maxLength to 100 to match backend."
+            "issue": "UI maxLength (500) is greater than backend column length (100)",
+            "recommendation": "Increase @Column(length = 500) and @Size(max = 500) on the Java entity and update DB schema (migration), or reduce UI maxLength to 100 to match backend."
           }
         },
         {
@@ -97,7 +97,7 @@
           }
         }
       ],
-      "notes": "UI enforces max lengths (firstName 150, lastName 150, position 200). Backend already matches lastName and position; firstName is a mismatch and email length is not specified in backend."
+      "notes": "UI enforces max lengths (firstName 500, lastName 150, position 200). Backend already matches lastName and position; firstName is a mismatch and email length is not specified in backend."
     },
     {
       "id": "/api/employees/{id}",
@@ -111,7 +111,7 @@
           "name": "firstName",
           "uiType": "textField",
           "required": true,
-          "uiMaxLength": 150,
+          "uiMaxLength": 500,
           "declaredJavaAnnotations": ["@Column(length = 100)", "@Size(max = 100)"],
           "javaType": "String",
           "backend": {
@@ -121,8 +121,8 @@
             "length": 100
           },
           "mismatch": {
-            "issue": "UI maxLength (150) is greater than backend column length (100)",
-            "recommendation": "Increase @Column(length = 150) and @Size(max = 150) on the Java entity and update DB schema (migration), or reduce UI maxLength to 100 to match backend."
+            "issue": "UI maxLength (500) is greater than backend column length (100)",
+            "recommendation": "Increase @Column(length = 500) and @Size(max = 500) on the Java entity and update DB schema (migration), or reduce UI maxLength to 100 to match backend."
           }
         },
         {
