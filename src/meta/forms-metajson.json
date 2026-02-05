@@ -12,7 +12,7 @@
           "name": "firstName",
           "uiType": "textField",
           "required": true,
-          "maxLength": 150,
+          "maxLength": 500,
           "javaType": "String",
           "javaAnnotations": ["@Column(length = 100)", "@Size(max = 100)"]
         },
@@ -55,7 +55,7 @@
           "javaAnnotations": []
         }
       ],
-      "notes": "Front-end enforces max lengths for firstName (100), lastName (150), position (200). Backend Java entity should align column lengths and validation annotations to avoid truncation or persistence errors."
+      "notes": "Front-end enforces max lengths for firstName (500), lastName (150), position (200). Backend Java entity should align column lengths and validation annotations to avoid truncation or persistence errors."
     },
     {
       "id": "/api/employees/{id}",
@@ -67,7 +67,7 @@
           "name": "firstName",
           "uiType": "textField",
           "required": true,
-          "maxLength": 150,
+          "maxLength": 500,
           "javaType": "String",
           "javaAnnotations": ["@Column(length = 100)", "@Size(max = 100)"]
         },
