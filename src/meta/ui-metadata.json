@@ -5,14 +5,6 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "hidden",
-        "attributes": {
-          "readOnly": true,
-          "note": "present when editing existing employee; not an editable input"
-        }
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -39,24 +31,18 @@
         "name": "position",
         "uiType": "textField",
         "attributes": {
-          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
         "uiType": "numberField",
-        "attributes": {
-          "required": false,
-          "note": "converted to Number before sending; null if empty"
-        }
+        "attributes": {}
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
-        "attributes": {
-          "required": false
-        }
+        "attributes": {}
       }
     ]
   },
@@ -66,14 +52,6 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "hidden",
-        "attributes": {
-          "readOnly": true,
-          "note": "used to build the URL path for update"
-        }
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -100,24 +78,18 @@
         "name": "position",
         "uiType": "textField",
         "attributes": {
-          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
         "uiType": "numberField",
-        "attributes": {
-          "required": false,
-          "note": "converted to Number before sending; null if empty"
-        }
+        "attributes": {}
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
-        "attributes": {
-          "required": false
-        }
+        "attributes": {}
       }
     ]
   },
