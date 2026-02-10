@@ -1,6 +1,12 @@
 [
   {
     "id": "/api/employees",
+    "httpMethod": "GET",
+    "uiComponent": "src/components/EmployeeList.jsx",
+    "fields": []
+  },
+  {
+    "id": "/api/employees",
     "httpMethod": "POST",
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
@@ -57,14 +63,6 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "pathParam",
-        "attributes": {
-          "required": true,
-          "dataType": "string"
-        }
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -108,13 +106,14 @@
         "attributes": {
           "required": false
         }
+      },
+      {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {
+          "usedFor": "resource identifier (provided in form state, not an input element)"
+        }
       }
     ]
-  },
-  {
-    "id": "/api/employees",
-    "httpMethod": "GET",
-    "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
   }
 ]
