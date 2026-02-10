@@ -5,6 +5,14 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {
+          "usedInStateOnly": true,
+          "notes": "Present in component state; if set, form performs update (PUT) instead of create (POST)"
+        }
+      },
+      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -47,7 +55,8 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false
+          "required": false,
+          "clientConversion": "string to Number before submit (null if empty)"
         }
       },
       {
@@ -55,13 +64,6 @@
         "uiType": "datePicker",
         "attributes": {
           "required": false
-        }
-      },
-      {
-        "name": "id",
-        "uiType": "implicit/hidden",
-        "attributes": {
-          "usedFor": "determines create vs update; not an editable input in the form"
         }
       }
     ]
@@ -72,6 +74,14 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {
+          "usedInStateOnly": true,
+          "notes": "Used to build URL /api/employees/{id}"
+        }
+      },
+      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -114,7 +124,8 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false
+          "required": false,
+          "clientConversion": "string to Number before submit (null if empty)"
         }
       },
       {
@@ -123,14 +134,6 @@
         "attributes": {
           "required": false
         }
-      },
-      {
-        "name": "id",
-        "uiType": "implicit/hidden",
-        "attributes": {
-          "required": true,
-          "usedFor": "path parameter {id} for update"
-        }
       }
     ]
   },
@@ -138,47 +141,6 @@
     "id": "/api/employees",
     "httpMethod": "GET",
     "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": [
-      {
-        "name": "id",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "firstName",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "lastName",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "projectName",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "email",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "position",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "salary",
-        "uiType": "display",
-        "attributes": {}
-      },
-      {
-        "name": "hiredDate",
-        "uiType": "display",
-        "attributes": {}
-      }
-    ]
+    "fields": []
   }
 ]
