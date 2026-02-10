@@ -6,7 +6,7 @@
     "fields": [
       {
         "name": "firstName",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
           "required": true,
           "maxLength": 900
@@ -14,7 +14,7 @@
       },
       {
         "name": "lastName",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
           "required": true,
           "maxLength": 150
@@ -22,31 +22,40 @@
       },
       {
         "name": "email",
-        "uiType": "input(email)",
+        "uiType": "textField",
         "attributes": {
+          "type": "email",
           "required": true
         }
       },
       {
         "name": "position",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
-          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
-        "uiType": "input(number)",
+        "uiType": "numberField",
         "attributes": {
-          "required": false
+          "type": "number",
+          "nullable": true
         }
       },
       {
         "name": "hiredDate",
-        "uiType": "input(date)",
+        "uiType": "datePicker",
         "attributes": {
-          "required": false
+          "type": "date"
+        }
+      },
+      {
+        "name": "id",
+        "uiType": "hidden",
+        "attributes": {
+          "usedFor": "update-detection",
+          "presentInState": true
         }
       }
     ]
@@ -58,7 +67,7 @@
     "fields": [
       {
         "name": "firstName",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
           "required": true,
           "maxLength": 900
@@ -66,7 +75,7 @@
       },
       {
         "name": "lastName",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
           "required": true,
           "maxLength": 150
@@ -74,39 +83,43 @@
       },
       {
         "name": "email",
-        "uiType": "input(email)",
+        "uiType": "textField",
         "attributes": {
+          "type": "email",
           "required": true
         }
       },
       {
         "name": "position",
-        "uiType": "input(text)",
+        "uiType": "textField",
         "attributes": {
-          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
-        "uiType": "input(number)",
+        "uiType": "numberField",
         "attributes": {
-          "required": false
+          "type": "number",
+          "nullable": true
         }
       },
       {
         "name": "hiredDate",
-        "uiType": "input(date)",
+        "uiType": "datePicker",
         "attributes": {
-          "required": false
+          "type": "date"
+        }
+      },
+      {
+        "name": "id",
+        "uiType": "pathVariable",
+        "attributes": {
+          "placeholder": "{id}",
+          "usedInEndpoint": true,
+          "presentInState": true
         }
       }
     ]
-  },
-  {
-    "id": "/api/employees",
-    "httpMethod": "GET",
-    "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": []
   }
 ]
