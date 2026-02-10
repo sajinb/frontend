@@ -31,18 +31,23 @@
         "name": "position",
         "uiType": "textField",
         "attributes": {
+          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
         "uiType": "numberField",
-        "attributes": {}
+        "attributes": {
+          "required": false
+        }
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
-        "attributes": {}
+        "attributes": {
+          "required": false
+        }
       }
     ]
   },
@@ -51,6 +56,14 @@
     "httpMethod": "PUT",
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
+      {
+        "name": "id",
+        "uiType": "pathParam",
+        "attributes": {
+          "required": true,
+          "dataType": "string"
+        }
+      },
       {
         "name": "firstName",
         "uiType": "textField",
@@ -78,18 +91,23 @@
         "name": "position",
         "uiType": "textField",
         "attributes": {
+          "required": false,
           "maxLength": 200
         }
       },
       {
         "name": "salary",
         "uiType": "numberField",
-        "attributes": {}
+        "attributes": {
+          "required": false
+        }
       },
       {
         "name": "hiredDate",
         "uiType": "datePicker",
-        "attributes": {}
+        "attributes": {
+          "required": false
+        }
       }
     ]
   },
