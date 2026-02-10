@@ -9,7 +9,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 500
+          "maxLength": 700
         }
       },
       {
@@ -61,7 +61,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 500
+          "maxLength": 700
         }
       },
       {
@@ -107,48 +107,6 @@
     "id": "/api/employees",
     "httpMethod": "GET",
     "uiComponent": "src/components/EmployeeList.jsx",
-    "fields": [
-      {
-        "name": "id",
-        "uiType": "text",
-        "attributes": {}
-      },
-      {
-        "name": "firstName",
-        "uiType": "text",
-        "attributes": {
-          "maxLength": 500
-        }
-      },
-      {
-        "name": "lastName",
-        "uiType": "text",
-        "attributes": {
-          "maxLength": 150
-        }
-      },
-      {
-        "name": "email",
-        "uiType": "text",
-        "attributes": {}
-      },
-      {
-        "name": "position",
-        "uiType": "text",
-        "attributes": {
-          "maxLength": 200
-        }
-      },
-      {
-        "name": "salary",
-        "uiType": "number",
-        "attributes": {}
-      },
-      {
-        "name": "hiredDate",
-        "uiType": "date",
-        "attributes": {}
-      }
-    ]
+    "fields": []
   }
 ]
