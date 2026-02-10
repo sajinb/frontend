@@ -5,14 +5,6 @@
     "uiComponent": "src/components/EmployeeForm.jsx",
     "fields": [
       {
-        "name": "id",
-        "uiType": "hidden",
-        "attributes": {
-          "usedInStateOnly": true,
-          "notes": "Present in component state; if set, form performs update (PUT) instead of create (POST)"
-        }
-      },
-      {
         "name": "firstName",
         "uiType": "textField",
         "attributes": {
@@ -56,7 +48,7 @@
         "uiType": "numberField",
         "attributes": {
           "required": false,
-          "clientConversion": "string to Number before submit (null if empty)"
+          "note": "Converted to Number or sent as null if empty"
         }
       },
       {
@@ -75,10 +67,10 @@
     "fields": [
       {
         "name": "id",
-        "uiType": "hidden",
+        "uiType": "path",
         "attributes": {
-          "usedInStateOnly": true,
-          "notes": "Used to build URL /api/employees/{id}"
+          "required": true,
+          "note": "Taken from form state when editing (not rendered as an input)"
         }
       },
       {
@@ -125,7 +117,7 @@
         "uiType": "numberField",
         "attributes": {
           "required": false,
-          "clientConversion": "string to Number before submit (null if empty)"
+          "note": "Converted to Number or sent as null if empty"
         }
       },
       {
