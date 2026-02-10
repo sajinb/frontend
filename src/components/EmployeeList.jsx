@@ -39,6 +39,7 @@ export default function EmployeeList() {
             <tr>
               <th style={{ textAlign: 'left', padding: 8 }}>ID</th>
               <th style={{ textAlign: 'left', padding: 8 }}>Name</th>
+              <th style={{ textAlign: 'left', padding: 8 }}>Project</th>
               <th style={{ textAlign: 'left', padding: 8 }}>Email</th>
               <th style={{ textAlign: 'left', padding: 8 }}>Position</th>
               <th style={{ textAlign: 'left', padding: 8 }}>Salary</th>
@@ -51,6 +52,7 @@ export default function EmployeeList() {
               <tr key={emp.id}>
                 <td style={{ padding: 8 }}>{emp.id}</td>
                 <td style={{ padding: 8 }}>{emp.firstName} {emp.lastName}</td>
+                <td style={{ padding: 8 }}>{emp.projectName}</td>
                 <td style={{ padding: 8 }}>{emp.email}</td>
                 <td style={{ padding: 8 }}>{emp.position}</td>
                 <td style={{ padding: 8 }}>{emp.salary}</td>

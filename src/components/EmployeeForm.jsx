@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createEmployee, updateEmployee } from '../api/employeeApi'
 
-const empty = { firstName: '', lastName: '', email: '', position: '', salary: '', hiredDate: '' }
+const empty = { firstName: '', lastName: '', projectName: '', email: '', position: '', salary: '', hiredDate: '' }
 
 export default function EmployeeForm({ existing, onSaved }) {
   const [form, setForm] = useState(existing || empty)
@@ -9,7 +9,7 @@ export default function EmployeeForm({ existing, onSaved }) {
   const [error, setError] = useState('')
 
   // maximum lengths for fields
-  const maxLengths = { firstName: 900, lastName: 150, position: 200 }
+  const maxLengths = { firstName: 800, lastName: 150, projectName: 500, position: 200 }
 
   React.useEffect(() => {
     setForm(existing || empty)
@@ -25,7 +25,7 @@ export default function EmployeeForm({ existing, onSaved }) {
     setError('')
 
     // client-side length validation
-    for (const key of ['firstName', 'lastName', 'position']) {
+    for (const key of ['firstName', 'lastName', 'projectName', 'position']) {
       const val = form[key] || ''
       if (val.length > (maxLengths[key] || Infinity)) {
         setError(`${key} must be at most ${maxLengths[key]} characters`)
@@ -60,6 +60,9 @@ export default function EmployeeForm({ existing, onSaved }) {
 
       <label>Last name</label>
       <input name="lastName" value={form.lastName} onChange={handleChange} required maxLength={maxLengths.lastName} />
+
+      <label>Project name</label>
+      <input name="projectName" value={form.projectName} onChange={handleChange} maxLength={maxLengths.projectName} />
 
       <label>Email</label>
       <input name="email" type="email" value={form.email} onChange={handleChange} required />
