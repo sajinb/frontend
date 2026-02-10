@@ -9,7 +9,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 900
+          "maxLength": 800
         }
       },
       {
@@ -18,6 +18,14 @@
         "attributes": {
           "required": true,
           "maxLength": 150
+        }
+      },
+      {
+        "name": "projectName",
+        "uiType": "textField",
+        "attributes": {
+          "required": false,
+          "maxLength": 500
         }
       },
       {
@@ -39,8 +47,7 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false,
-          "sentAs": "Number (or null if empty)"
+          "required": false
         }
       },
       {
@@ -48,6 +55,13 @@
         "uiType": "datePicker",
         "attributes": {
           "required": false
+        }
+      },
+      {
+        "name": "id",
+        "uiType": "implicit/hidden",
+        "attributes": {
+          "usedFor": "determines create vs update; not an editable input in the form"
         }
       }
     ]
@@ -62,7 +76,7 @@
         "uiType": "textField",
         "attributes": {
           "required": true,
-          "maxLength": 900
+          "maxLength": 800
         }
       },
       {
@@ -71,6 +85,14 @@
         "attributes": {
           "required": true,
           "maxLength": 150
+        }
+      },
+      {
+        "name": "projectName",
+        "uiType": "textField",
+        "attributes": {
+          "required": false,
+          "maxLength": 500
         }
       },
       {
@@ -92,8 +114,7 @@
         "name": "salary",
         "uiType": "numberField",
         "attributes": {
-          "required": false,
-          "sentAs": "Number (or null if empty)"
+          "required": false
         }
       },
       {
@@ -101,6 +122,14 @@
         "uiType": "datePicker",
         "attributes": {
           "required": false
+        }
+      },
+      {
+        "name": "id",
+        "uiType": "implicit/hidden",
+        "attributes": {
+          "required": true,
+          "usedFor": "path parameter {id} for update"
         }
       }
     ]
@@ -112,39 +141,42 @@
     "fields": [
       {
         "name": "id",
-        "uiType": "displayText",
+        "uiType": "display",
         "attributes": {}
       },
       {
         "name": "firstName",
-        "uiType": "displayText",
+        "uiType": "display",
         "attributes": {}
       },
       {
         "name": "lastName",
-        "uiType": "displayText",
+        "uiType": "display",
+        "attributes": {}
+      },
+      {
+        "name": "projectName",
+        "uiType": "display",
         "attributes": {}
       },
       {
         "name": "email",
-        "uiType": "displayText",
-        "attributes": {
-          "format": "email"
-        }
+        "uiType": "display",
+        "attributes": {}
       },
       {
         "name": "position",
-        "uiType": "displayText",
+        "uiType": "display",
         "attributes": {}
       },
       {
         "name": "salary",
-        "uiType": "displayNumber",
+        "uiType": "display",
         "attributes": {}
       },
       {
         "name": "hiredDate",
-        "uiType": "displayDate",
+        "uiType": "display",
         "attributes": {}
       }
     ]
