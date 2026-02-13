@@ -9,7 +9,7 @@ export default function EmployeeForm({ existing, onSaved }) {
   const [error, setError] = useState('')
 
   // maximum lengths for fields
-  const maxLengths = { firstName: 800, lastName: 150, projectName: 500, position: 200 }
+  const maxLengths = { firstName: 450, lastName: 150, projectName: 500, position: 200 }
 
   React.useEffect(() => {
     setForm(existing || empty)
