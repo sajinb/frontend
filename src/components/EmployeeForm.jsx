@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createEmployee, updateEmployee } from '../api/employeeApi'
 
-const empty = { firstName: '', lastName: '', projectName: '', email: '', position: '', salary: '', hiredDate: '' }
+const empty = { firstName: '', lastName: '', projectName: '', email: '', position: '', salary: '', hiredDate: '', address: '', primarySkills: '' }
 
 export default function EmployeeForm({ existing, onSaved }) {
   const [form, setForm] = useState(existing || empty)
@@ -9,7 +9,7 @@ export default function EmployeeForm({ existing, onSaved }) {
   const [error, setError] = useState('')
 
   // maximum lengths for fields
-  const maxLengths = { firstName: 800, lastName: 150, projectName: 500, position: 200 }
+  const maxLengths = { firstName: 800, lastName: 300, projectName: 500, position: 200, address: 400, primarySkills: 500 }
 
   React.useEffect(() => {
     setForm(existing || empty)
@@ -69,6 +69,12 @@ export default function EmployeeForm({ existing, onSaved }) {
 
       <label>Position</label>
       <input name="position" value={form.position} onChange={handleChange} maxLength={maxLengths.position} />
+
+       <label>Address</label>
+       <input name="address" value={form.address} onChange={handleChange} maxLength={maxLengths.address} />
+
+       <label>Primary Skills</label>
+       <input name="primarySkills" value={form.primarySkills} onChange={handleChange} maxLength={maxLengths.primarySkills} />
 
       <label>Salary</label>
       <input name="salary" type="number" value={form.salary} onChange={handleChange} />
