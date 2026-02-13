@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { createEmployee, updateEmployee } from '../api/employeeApi'
 
-const empty = { firstName: '', lastName: '', projectName: '', email: '', position: '', salary: '', hiredDate: '', address: '' }
+const empty = { firstName: '', lastName: '', projectName: '', email: '', position: '', salary: '', hiredDate: '', address: '', primarySkills: '' }
 
 export default function EmployeeForm({ existing, onSaved }) {
   const [form, setForm] = useState(existing || empty)
